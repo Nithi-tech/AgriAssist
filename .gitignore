@@ -41,6 +41,12 @@ next-env.d.ts
 .genkit/*
 .env*
 
+# Large files and archives
+*.zip
+*.rar
+*.tar.gz
+*.7z
+
 # firebase
 firebase-debug.log
 firestore-debug.log
