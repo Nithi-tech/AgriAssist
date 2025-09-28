@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "state": "MAHARASTRA",
+    "scheme_name": "Chief Minister Kisan Sanman Yojana",
+    "explanation": "The main objective of the Chief Minister Kisan Sanman Yojana is to provide direct financial support to farmers in Maharashtra to increase their income and help them invest in better agricultural practices.",
+    "eligibility_criteria": "Small and marginal farmers in Maharashtra; ₹6000 per year support",
+    "link": "mahabhumi.gov.in",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "state": "MAHARASTRA",
+    "scheme_name": "Chief Minister's Krushi Sanjeevani Yojana",
+    "explanation": "The main objective of the Chief Minister's Krushi Sanjeevani Yojana is to promote natural and sustainable farming practices by reducing dependence on chemical fertilizers and pesticides, thereby improving soil health and supporting eco-friendly agriculture.",
+    "eligibility_criteria": "Farmers affected by natural disasters; financial aid for crop loss",
+    "link": "krushi.maharashtra.gov.in",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "state": "HARYANA",
+    "scheme_name": "Meri Fasal Mera Byora (MFMB)",
+    "explanation": "The scheme aims to provide affordable and reliable electricity connections to farmers for irrigation purposes. It helps reduce their reliance on diesel pumps, lowers irrigation costs, and increases agricultural productivity.",
+    "eligibility_criteria": "Farmers in Haryana; mandatory for accessing various state and central schemes",
+    "link": "mfmb.haryana.gov.in",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "state": "HARYANA",
+    "scheme_name": "Krishi Yantra Anudan Yojana (Farm Mechanization)",
+    "explanation": "The primary goal of this scheme is to enhance agricultural productivity and efficiency by facilitating access to advanced machinery, thereby reducing labor costs and improving crop yields.",
+    "eligibility_criteria": "Farmers registered on MFMB; subsidy for purchasing farm machinery",
+    "link": "agriharyana.gov.in/MechCRMScheme",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "state": "BIHAR",
+    "scheme_name": "Mukhyamantri Bagwani Mission",
+    "explanation": "The scheme aims to promote horticulture and increase farmers' income through diversified farming practices including fruits, vegetables, and flower cultivation.",
+    "eligibility_criteria": "Small and marginal farmers in Bihar; focus on horticulture development",
+    "link": "horticulture.bihar.gov.in",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 6,
+    "state": "KARNATAKA",
+    "scheme_name": "Karnataka Raitha Samruddhi Yojane",
+    "explanation": "A comprehensive scheme to provide financial assistance to farmers for crop production, farm mechanization, and agricultural infrastructure development.",
+    "eligibility_criteria": "Small farmers in Karnataka; income support and agricultural development",
+    "link": "raitamitra.karnataka.gov.in",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 7,
+    "state": "TAMIL NADU",
+    "scheme_name": "Uzhavar Sandhai",
+    "explanation": "Direct marketing platform for farmers to sell their produce directly to consumers, eliminating middlemen and ensuring better prices for farmers.",
+    "eligibility_criteria": "All registered farmers in Tamil Nadu; direct market access",
+    "link": "tnagrisnet.tn.gov.in",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 8,
+    "state": "CENTRAL GOVERNMENT SCHEMES",
+    "scheme_name": "PM-KISAN Samman Nidhi",
+    "explanation": "Direct income support scheme providing ₹6000 per year to small and marginal farmers across India through direct bank transfer.",
+    "eligibility_criteria": "Small and marginal farmers; land holding up to 2 hectares",
+    "link": "pmkisan.gov.in",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 9,
+    "state": "CENTRAL GOVERNMENT SCHEMES",
+    "scheme_name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "explanation": "Crop insurance scheme providing financial support to farmers suffering crop loss/damage arising out of unforeseen events.",
+    "eligibility_criteria": "All farmers including sharecroppers and tenant farmers",
+    "link": "pmfby.gov.in",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 10,
+    "state": "PUNJAB",
+    "scheme_name": "Chief Minister Kisan Card",
+    "explanation": "Digital identity card for farmers providing access to various government schemes and subsidies.",
+    "eligibility_criteria": "All farmers in Punjab; digital identity and scheme access",
+    "link": "punjab.gov.in",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 11,
+    "state": "GUJARAT",
+    "scheme_name": "iKhedut Portal",
+    "explanation": "Digital platform providing agricultural information, weather forecasts, market prices, and government scheme details to farmers.",
+    "eligibility_criteria": "All farmers in Gujarat; digital agricultural services",
+    "link": "ikhedut.gujarat.gov.in",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 12,
+    "state": "KERALA",
+    "scheme_name": "Kerala State Horticulture Mission",
+    "explanation": "Comprehensive horticulture development scheme focusing on fruits, vegetables, spices, and plantation crops.",
+    "eligibility_criteria": "Farmers engaged in horticulture in Kerala; technical and financial support",
+    "link": "horticulture.kerala.gov.in",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "dashboard": "डॅशबोर्ड",
+  "crops": "पिके",
+  "weather": "हवामान",
+  "chat": "चॅट",
+  "settingsTitle": "सेटिंग्स",
+  "settings": {
+    "title": "सेटिंग्स",
+    "subtitle": "आपली अॅप्लिकेशन प्राधान्ये कॉन्फिगर करा",
+    "language": "भाषा",
+    "theme": "थीम",
+    "language_label": "भाषा",
+    "language_description": "आपली पसंतीची भाषा निवडा",
+    "about_label": "AgriAssist बद्दल",
+    "contact_label": "समर्थन",
+    "feedback_label": "अभिप्राय",
+    "language_updated": "भाषा यशस्वीरित्या अपडेट केली"
+  },
+  "language": "भाषा",
+  "welcome": "स्वागत"
+}

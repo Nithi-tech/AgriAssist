@@ -1,0 +1,30 @@
+[
+  {
+    "id": "user_001",
+    "email": "farmer1@example.com",
+    "phone": "+91-9876543210",
+    "name": "Rajesh Kumar",
+    "state": "Karnataka",
+    "district": "Bangalore Rural",
+    "farm_size": 2.5,
+    "farm_type": "small farmer",
+    "crops": ["rice", "wheat"],
+    "annual_income": 75000,
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "user_002",
+    "email": "farmer2@example.com",
+    "phone": "+91-9876543211",
+    "name": "Priya Sharma",
+    "state": "Punjab",
+    "district": "Ludhiana",
+    "farm_size": 5.0,
+    "farm_type": "medium farmer",
+    "crops": ["wheat", "rice"],
+    "annual_income": 150000,
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  }
+]

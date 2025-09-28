@@ -1,0 +1,21 @@
+{
+  "dashboard": "ڈیش بورڈ",
+  "crops": "فصلیں",
+  "weather": "موسم",
+  "chat": "چیٹ",
+  "settingsTitle": "ترتیبات",
+  "settings": {
+    "title": "ترتیبات",
+    "subtitle": "اپنی ایپلیکیشن کی ترجیحات کو تشکیل دیں",
+    "language": "زبان",
+    "theme": "تھیم",
+    "language_label": "زبان",
+    "language_description": "اپنی پسندیدہ زبان منتخب کریں",
+    "about_label": "AgriAssist کے بارے میں",
+    "contact_label": "سپورٹ",
+    "feedback_label": "رائے",
+    "language_updated": "زبان کامیابی سے اپ ڈیٹ کر دی گئی"
+  },
+  "language": "زبان",
+  "welcome": "خوش آمدید"
+}

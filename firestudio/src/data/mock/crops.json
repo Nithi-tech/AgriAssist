@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Rice",
+    "category": "Cereal",
+    "season": "Kharif",
+    "growing_period": "120-140 days",
+    "suitable_states": ["West Bengal", "Andhra Pradesh", "Tamil Nadu", "Punjab", "Haryana"],
+    "water_requirement": "High",
+    "soil_type": "Clay loam",
+    "created_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Wheat",
+    "category": "Cereal",
+    "season": "Rabi",
+    "growing_period": "120-150 days",
+    "suitable_states": ["Punjab", "Haryana", "Uttar Pradesh", "Madhya Pradesh", "Rajasthan"],
+    "water_requirement": "Medium",
+    "soil_type": "Well-drained loamy soil",
+    "created_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "name": "Maize",
+    "category": "Cereal",
+    "season": "Kharif/Rabi",
+    "growing_period": "80-120 days",
+    "suitable_states": ["Karnataka", "Andhra Pradesh", "Tamil Nadu", "Maharashtra", "Bihar"],
+    "water_requirement": "Medium",
+    "soil_type": "Well-drained fertile soil",
+    "created_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "name": "Cotton",
+    "category": "Cash Crop",
+    "season": "Kharif",
+    "growing_period": "180-200 days",
+    "suitable_states": ["Gujarat", "Maharashtra", "Andhra Pradesh", "Karnataka", "Haryana"],
+    "water_requirement": "Medium",
+    "soil_type": "Black cotton soil",
+    "created_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "name": "Sugarcane",
+    "category": "Cash Crop",
+    "season": "Year-round",
+    "growing_period": "12-18 months",
+    "suitable_states": ["Uttar Pradesh", "Maharashtra", "Karnataka", "Tamil Nadu", "Gujarat"],
+    "water_requirement": "High",
+    "soil_type": "Rich loamy soil",
+    "created_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": 6,
+    "name": "Tomato",
+    "category": "Vegetable",
+    "season": "Kharif/Rabi",
+    "growing_period": "60-80 days",
+    "suitable_states": ["Karnataka", "Andhra Pradesh", "Maharashtra", "Madhya Pradesh", "Gujarat"],
+    "water_requirement": "Medium",
+    "soil_type": "Well-drained sandy loam",
+    "created_at": "2024-01-01T00:00:00Z"
+  }
+]

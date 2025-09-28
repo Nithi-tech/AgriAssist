@@ -1,0 +1,21 @@
+{
+  "dashboard": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+  "crops": "ಬೆಳೆಗಳು",
+  "weather": "ಹವಾಮಾನ",
+  "chat": "ಚಾಟ್",
+  "settingsTitle": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+  "settings": {
+    "title": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+    "subtitle": "ನಿಮ್ಮ ಅಪ್ಲಿಕೇಶನ್ ಆದ್ಯತೆಗಳನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿ",
+    "language": "ಭಾಷೆ",
+    "theme": "ಥೀಮ್",
+    "language_label": "ಭಾಷೆ",
+    "language_description": "ನಿಮ್ಮ ಆದ್ಯತೆಯ ಭಾಷೆಯನ್ನು ಆರಿಸಿ",
+    "about_label": "AgriAssist ಬಗ್ಗೆ",
+    "contact_label": "ಬೆಂಬಲ",
+    "feedback_label": "ಪ್ರತಿಕ್ರಿಯೆ",
+    "language_updated": "ಭಾಷೆ ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಲಾಗಿದೆ"
+  },
+  "language": "ಭಾಷೆ",
+  "welcome": "ಸ್ವಾಗತ"
+}

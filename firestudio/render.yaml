@@ -1,0 +1,33 @@
+version: "1"
+services:
+  - type: web
+    name: agriassist-backend
+    runtime: python
+    buildCommand: "pip install -r backend/requirements.txt"
+    startCommand: "cd backend && uvicorn camera_api:app --host 0.0.0.0 --port $PORT --workers 4"
+    envVars:
+      - key: PYTHONPATH
+        value: /opt/render/project/src/backend
+      - key: FIREBASE_SECRET
+        sync: false
+      - key: FIREBASE_CLIENT_EMAIL  
+        sync: false
+      - key: FIREBASE_PRIVATE_KEY
+        sync: false
+    autoDeploy: true
+    region: singapore
+    plan: starter
+    healthCheckPath: /health
+    
+  - type: web
+    name: agriassist-market
+    runtime: node
+    buildCommand: "cd backend/market-prices && npm install"
+    startCommand: "cd backend/market-prices && node server.js"
+    envVars:
+      - key: NODE_ENV
+        value: production
+    autoDeploy: true
+    region: singapore  
+    plan: starter
+    healthCheckPath: /health

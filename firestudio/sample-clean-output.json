@@ -1,0 +1,37 @@
+[
+  {
+    "Scheme Name": "Pradhan Mantri Fasal Bima Yojana",
+    "State": "India",
+    "Eligibility": "All farmers growing notified crops in notified areas during the season who have insurable interest",
+    "Category": "Agriculture",
+    "Benefit Amount": "₹ Variable"
+  },
+  {
+    "Scheme Name": "DBT Scheme Below Poverty Line",
+    "State": "Not specified",
+    "Eligibility": "Not specified",
+    "Category": "Social Welfare",
+    "Benefit Amount": "₹ Not specified"
+  },
+  {
+    "Scheme Name": "Kisan Credit Card Scheme",
+    "State": "India",
+    "Eligibility": "Farmers for crop cultivation and allied activities",
+    "Category": "Agriculture",
+    "Benefit Amount": "₹ 300000"
+  },
+  {
+    "Scheme Name": "Ayushman Bharat PM JAY",
+    "State": "India",
+    "Eligibility": "Families listed in SECC 2011 database",
+    "Category": "Health",
+    "Benefit Amount": "₹ 500000"
+  },
+  {
+    "Scheme Name": "Tamil Nadu Amma Canteen",
+    "State": "Tamil Nadu",
+    "Eligibility": "All citizens, especially urban poor",
+    "Category": "Food Security",
+    "Benefit Amount": "₹ 5"
+  }
+]

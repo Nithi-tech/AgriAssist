@@ -1,0 +1,102 @@
+{
+  "settings": {
+    "title": "सेटिंग्स",
+    "profile": {
+      "title": "प्रोफ़ाइल",
+      "editProfile": "प्रोफ़ाइल संपादित करें",
+      "name": "नाम",
+      "mobile": "मोबाइल नंबर",
+      "village": "गाँव",
+      "district": "जिला",
+      "state": "राज्य",
+      "farmArea": "खेत का क्षेत्रफल (एकड़)",
+      "primaryCrop": "मुख्य फसल",
+      "soilType": "मिट्टी का प्रकार",
+      "profilePicture": "प्रोफ़ाइल चित्र",
+      "completion": "प्रोफ़ाइल पूर्णता",
+      "save": "सहेजें",
+      "cancel": "रद्द करें"
+    },
+    "language": {
+      "title": "भाषा",
+      "english": "English",
+      "hindi": "हिंदी",
+      "tamil": "தமிழ்",
+      "telugu": "తెలుగు"
+    },
+    "theme": {
+      "title": "थीम",
+      "light": "उजला",
+      "dark": "गहरा",
+      "system": "सिस्टम"
+    },
+    "notifications": {
+      "title": "सूचनाएं",
+      "priceAlerts": "मूल्य अलर्ट",
+      "weatherWarnings": "मौसम चेतावनी",
+      "schemeUpdates": "योजना अपडेट",
+      "cropReminders": "फसल अनुस्मारक",
+      "expertAdvice": "विशेषज्ञ सलाह",
+      "channels": "सूचना चैनल",
+      "sms": "SMS",
+      "whatsapp": "WhatsApp",
+      "inapp": "ऐप में",
+      "familyContacts": "पारिवारिक संपर्क",
+      "addContact": "संपर्क जोड़ें",
+      "removeContact": "हटाएं"
+    },
+    "reminders": {
+      "title": "कृषि अनुस्मारक",
+      "irrigation": "सिंचाई अनुस्मारक",
+      "enabled": "सक्षम",
+      "frequency": "आवृत्ति (दिन)",
+      "timeOfDay": "सबसे अच्छा समय",
+      "morning": "सुबह",
+      "evening": "शाम",
+      "suggestFrequency": "आवृत्ति सुझाएं",
+      "fertilizer": "उर्वरक कार्यक्रम",
+      "pesticide": "कीटनाशक कार्यक्रम",
+      "nextDate": "अगली तारीख"
+    },
+    "privacy": {
+      "title": "गोपनीयता और डेटा",
+      "shareProduction": "उत्पादन डेटा साझा करें",
+      "expertContact": "विशेषज्ञ संपर्क की अनुमति दें",
+      "privacyPolicy": "गोपनीयता नीति"
+    },
+    "data": {
+      "title": "डेटा और बैकअप",
+      "exportData": "डेटा निर्यात करें",
+      "importData": "डेटा आयात करें",
+      "lastBackup": "अंतिम बैकअप",
+      "offlineMode": "ऑफ़लाइन मोड",
+      "autoSync": "सरकारी योजनाओं का ऑटो-सिंक",
+      "onlineFeatures": "ऑफ़लाइन होने पर ऑनलाइन सुविधाएं सीमित"
+    },
+    "quickActions": {
+      "title": "त्वरित क्रियाएं",
+      "exportBackup": "बैकअप निर्यात करें",
+      "importBackup": "बैकअप आयात करें",
+      "switchLanguage": "भाषा बदलें",
+      "exportPDF": "PDF रिपोर्ट निर्यात करें",
+      "savedLocally": "आपके बदलाव स्थानीय रूप से सहेजे गए हैं"
+    },
+    "aiAssistant": {
+      "title": "AI सहायक",
+      "open": "सहायक खोलें"
+    },
+    "messages": {
+      "profileUpdated": "प्रोफ़ाइल सफलतापूर्वक अपडेट की गई",
+      "settingsSaved": "सेटिंग्स सहेजी गईं",
+      "backupExported": "बैकअप सफलतापूर्वक निर्यात किया गया",
+      "backupImported": "बैकअप सफलतापूर्वक आयात किया गया",
+      "languageChanged": "भाषा बदली गई",
+      "themeChanged": "थीम बदली गई",
+      "offlineModeEnabled": "ऑफ़लाइन मोड सक्षम किया गया",
+      "offlineModeDisabled": "ऑफ़लाइन मोड अक्षम किया गया",
+      "error": "एक त्रुटि हुई। कृपया पुनः प्रयास करें।",
+      "invalidFile": "अमान्य बैकअप फ़ाइल",
+      "networkError": "नेटवर्क त्रुटि - कृपया पुनः प्रयास करें"
+    }
+  }
+}

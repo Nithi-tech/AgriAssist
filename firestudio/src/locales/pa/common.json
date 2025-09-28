@@ -1,0 +1,21 @@
+{
+  "dashboard": "ਡੈਸ਼ਬੋਰਡ",
+  "crops": "ਫਸਲਾਂ",
+  "weather": "ਮੌਸਮ",
+  "chat": "ਚੈਟ",
+  "settingsTitle": "ਸੈਟਿੰਗਜ਼",
+  "settings": {
+    "title": "ਸੈਟਿੰਗਜ਼",
+    "subtitle": "ਆਪਣੀ ਐਪਲੀਕੇਸ਼ਨ ਦੀਆਂ ਤਰਜੀਹਾਂ ਨੂੰ ਸੰਰਚਿਤ ਕਰੋ",
+    "language": "ਭਾਸ਼ਾ",
+    "theme": "ਥੀਮ",
+    "language_label": "ਭਾਸ਼ਾ",
+    "language_description": "ਆਪਣੀ ਪਸੰਦੀਦਾ ਭਾਸ਼ਾ ਚੁਣੋ",
+    "about_label": "AgriAssist ਬਾਰੇ",
+    "contact_label": "ਸਹਾਇਤਾ",
+    "feedback_label": "ਫੀਡਬੈਕ",
+    "language_updated": "ਭਾਸ਼ਾ ਸਫਲਤਾਪੂਰਵਕ ਅੱਪਡੇਟ ਕੀਤੀ ਗਈ"
+  },
+  "language": "ਭਾਸ਼ਾ",
+  "welcome": "ਸਵਾਗਤ"
+}

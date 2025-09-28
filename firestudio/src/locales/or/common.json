@@ -1,0 +1,21 @@
+{
+  "dashboard": "ଡ୍ୟାସବୋର୍ଡ",
+  "crops": "ଫସଲ",
+  "weather": "ପାଗ",
+  "chat": "ଚାଟ",
+  "settingsTitle": "ସେଟିଂସ",
+  "settings": {
+    "title": "ସେଟିଂସ",
+    "subtitle": "ଆପଣଙ୍କ ଆପ୍ଲିକେସନ ପସନ୍ଦକୁ ସଂରଚନା କରନ୍ତୁ",
+    "language": "ଭାଷା",
+    "theme": "ଥିମ",
+    "language_label": "ଭାଷା",
+    "language_description": "ଆପଣଙ୍କ ପସନ୍ଦର ଭାଷା ବାଛନ୍ତୁ",
+    "about_label": "AgriAssist ବିଷୟରେ",
+    "contact_label": "ସହାୟତା",
+    "feedback_label": "ମତାମତ",
+    "language_updated": "ଭାଷା ସଫଳତାର ସହିତ ଅପଡେଟ ହୋଇଛି"
+  },
+  "language": "ଭାଷା",
+  "welcome": "ସ୍ୱାଗତ"
+}

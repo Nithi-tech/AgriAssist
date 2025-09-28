@@ -1,0 +1,58 @@
+{
+  "prices": [
+    {
+      "id": 1,
+      "state": "Maharashtra",
+      "district": "Pune",
+      "market": "Pune Market",
+      "commodity": "Rice",
+      "variety": "Basmati",
+      "grade": "FAQ",
+      "minPrice": 2500,
+      "maxPrice": 3000,
+      "modalPrice": 2750,
+      "unit": "Quintal",
+      "date": "2025-08-19"
+    },
+    {
+      "id": 2,
+      "state": "Punjab",
+      "district": "Ludhiana",
+      "market": "Ludhiana Mandi",
+      "commodity": "Wheat",
+      "variety": "PBW 343",
+      "grade": "FAQ",
+      "minPrice": 2000,
+      "maxPrice": 2200,
+      "modalPrice": 2100,
+      "unit": "Quintal",
+      "date": "2025-08-19"
+    },
+    {
+      "id": 3,
+      "state": "Gujarat",
+      "district": "Ahmedabad",
+      "market": "Ahmedabad APMC",
+      "commodity": "Cotton",
+      "variety": "Shankar-6",
+      "grade": "FAQ",
+      "minPrice": 5500,
+      "maxPrice": 6000,
+      "modalPrice": 5750,
+      "unit": "Quintal",
+      "date": "2025-08-19"
+    }
+  ],
+  "stats": {
+    "totalRecords": 3,
+    "lastFetchSuccess": true,
+    "lastFetchTime": "2025-08-19T10:06:07.068Z",
+    "averagePrice": 3533
+  },
+  "lastUpdated": "2025-08-19T10:06:07.068Z",
+  "metadata": {
+    "source": "mock_api",
+    "version": "1.0",
+    "fetchTime": "2025-08-19T10:06:07.068Z"
+  }
+}

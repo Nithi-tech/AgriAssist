@@ -1,0 +1,36 @@
+{
+  "rules": {
+    "sensor": {
+      ".read": true,
+      ".write": true,
+      "soilMoisture": {
+        ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 100"
+      },
+      "pH": {
+        ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 14"
+      },
+      "Nitrogen": {
+        ".validate": "newData.isNumber() && newData.val() >= 0"
+      },
+      "Phosphorus": {
+        ".validate": "newData.isNumber() && newData.val() >= 0"
+      },
+      "Potassium": {
+        ".validate": "newData.isNumber() && newData.val() >= 0"
+      },
+      "timestamp": {
+        ".validate": "newData.isNumber()"
+      },
+      "lastUpdated": {
+        ".validate": "newData.isString()"
+      }
+    },
+    "alerts": {
+      ".read": true,
+      ".write": true,
+      "animalDetection": {
+        ".validate": "newData.isString()"
+      }
+    }
+  }
+}

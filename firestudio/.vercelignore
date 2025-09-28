@@ -1,0 +1,33 @@
+# Vercel ignore file
+node_modules
+.env.local
+.env
+*.log
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Build outputs
+.next
+out
+
+# Testing
+coverage
+
+# Misc
+*.tgz
+*.tar.gz
+
+# Temporary files
+temp
+tmp
+
+# Sensor simulation scripts (not needed for deployment)
+sensor-data-simulator.js
+test-sensor-push.js
+esp32-sensor-client.ino
+add-single-test.js

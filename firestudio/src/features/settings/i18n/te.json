@@ -1,0 +1,102 @@
+{
+  "settings": {
+    "title": "సెట్టింగులు",
+    "profile": {
+      "title": "ప్రొఫైల్",
+      "editProfile": "ప్రొఫైల్ సవరించు",
+      "name": "పేరు",
+      "mobile": "మొబైల్ నంబర్",
+      "village": "గ్రామం",
+      "district": "జిల్లా",
+      "state": "రాష్ట్రం",
+      "farmArea": "వ్యవసాయ భూమి (ఎకరాలు)",
+      "primaryCrop": "ప్రధాన పంట",
+      "soilType": "మట్టి రకం",
+      "profilePicture": "ప్రొఫైల్ చిత్రం",
+      "completion": "ప్రొఫైల్ పూర్తి",
+      "save": "సేవ్",
+      "cancel": "రద్దు"
+    },
+    "language": {
+      "title": "భాష",
+      "english": "English",
+      "hindi": "हिंदी",
+      "tamil": "தமிழ்",
+      "telugu": "తెలుగు"
+    },
+    "theme": {
+      "title": "థీమ్",
+      "light": "లైట్",
+      "dark": "డార్క్",
+      "system": "సిస్టమ్"
+    },
+    "notifications": {
+      "title": "నోటిఫికేషన్లు",
+      "priceAlerts": "ధర హెచ్చరికలు",
+      "weatherWarnings": "వాతావరణ హెచ్చరికలు",
+      "schemeUpdates": "పథకం అప్డేట్లు",
+      "cropReminders": "పంట రిమైండర్లు",
+      "expertAdvice": "నిపుణుల సలహా",
+      "channels": "నోటిఫికేషన్ చానల్స్",
+      "sms": "SMS",
+      "whatsapp": "WhatsApp",
+      "inapp": "యాప్‌లో",
+      "familyContacts": "కుటుంబ సంపర్కాలు",
+      "addContact": "సంపర్కం జోడించు",
+      "removeContact": "తొలగించు"
+    },
+    "reminders": {
+      "title": "వ్యవసాయ రిమైండర్లు",
+      "irrigation": "నీటిపారుదల రిమైండర్లు",
+      "enabled": "ప్రారంభించబడింది",
+      "frequency": "తరచుదనం (రోజులు)",
+      "timeOfDay": "ఉత్తమ సమయం",
+      "morning": "ఉదయం",
+      "evening": "సాయంత్రం",
+      "suggestFrequency": "తరచుదనం సూచించు",
+      "fertilizer": "ఎరువుల షెడ్యూల్",
+      "pesticide": "క్రిమిసంహారక షెడ్యూల్",
+      "nextDate": "తదుపరి తేదీ"
+    },
+    "privacy": {
+      "title": "గోప్యత మరియు డేటా",
+      "shareProduction": "ఉత్పాదన డేటా పంచుకోండి",
+      "expertContact": "నిపుణుల సంపర్కాన్ని అనుమతించు",
+      "privacyPolicy": "గోప్యతా విధానం"
+    },
+    "data": {
+      "title": "డేటా మరియు బ్యాకప్",
+      "exportData": "డేటా ఎగుమతి",
+      "importData": "డేటా దిగుమతి",
+      "lastBackup": "చివరి బ్యాకప్",
+      "offlineMode": "ఆఫ్‌లైన్ మోడ్",
+      "autoSync": "ప్రభుత్వ పథకాలు ఆటో-సింక్",
+      "onlineFeatures": "ఆఫ్‌లైన్‌లో ఆన్‌లైన్ ఫీచర్లు పరిమితం"
+    },
+    "quickActions": {
+      "title": "వేగ చర్యలు",
+      "exportBackup": "బ్యాకప్ ఎగుమతి",
+      "importBackup": "బ్యాకప్ దిగుమతి",
+      "switchLanguage": "భాష మార్చు",
+      "exportPDF": "PDF రిపోర్ట్ ఎగుమతి",
+      "savedLocally": "మీ మార్పులు స్థానికంగా సేవ్ చేయబడ్డాయి"
+    },
+    "aiAssistant": {
+      "title": "AI అసిస్టెంట్",
+      "open": "అసిస్టెంట్ తెరువు"
+    },
+    "messages": {
+      "profileUpdated": "ప్రొఫైల్ విజయవంతంగా అప్డేట్ చేయబడింది",
+      "settingsSaved": "సెట్టింగులు సేవ్ చేయబడ్డాయి",
+      "backupExported": "బ్యాకప్ విజయవంతంగా ఎగుమతి చేయబడింది",
+      "backupImported": "బ్యాకప్ విజయవంతంగా దిగుమతి చేయబడింది",
+      "languageChanged": "భాష మార్చబడింది",
+      "themeChanged": "థీమ్ మార్చబడింది",
+      "offlineModeEnabled": "ఆఫ్‌లైన్ మోడ్ ప్రారంభించబడింది",
+      "offlineModeDisabled": "ఆఫ్‌లైన్ మోడ్ నిష్క్రియం చేయబడింది",
+      "error": "ఒక లోపం సంభవించింది. దయచేసి మళ్లీ ప్రయత్నించండి.",
+      "invalidFile": "చెల్లని బ్యాకప్ ఫైల్",
+      "networkError": "నెట్‌వర్క్ లోపం - దయచేసి మళ్లీ ప్రయత్నించండి"
+    }
+  }
+}

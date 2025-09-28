@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "commodity": "Rice",
+    "market": "Bangalore",
+    "state": "Karnataka",
+    "min_price": 2800,
+    "max_price": 3200,
+    "modal_price": 3000,
+    "date": "2024-01-15",
+    "created_at": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "commodity": "Wheat",
+    "market": "Delhi",
+    "state": "Delhi",
+    "min_price": 2500,
+    "max_price": 2800,
+    "modal_price": 2650,
+    "date": "2024-01-15",
+    "created_at": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "commodity": "Onion",
+    "market": "Mumbai",
+    "state": "Maharashtra",
+    "min_price": 1200,
+    "max_price": 1500,
+    "modal_price": 1350,
+    "date": "2024-01-15",
+    "created_at": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "commodity": "Tomato",
+    "market": "Chennai",
+    "state": "Tamil Nadu",
+    "min_price": 800,
+    "max_price": 1200,
+    "modal_price": 1000,
+    "date": "2024-01-15",
+    "created_at": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "commodity": "Potato",
+    "market": "Kolkata",
+    "state": "West Bengal",
+    "min_price": 600,
+    "max_price": 900,
+    "modal_price": 750,
+    "date": "2024-01-15",
+    "created_at": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": 6,
+    "commodity": "Sugarcane",
+    "market": "Pune",
+    "state": "Maharashtra",
+    "min_price": 300,
+    "max_price": 350,
+    "modal_price": 325,
+    "date": "2024-01-15",
+    "created_at": "2024-01-15T00:00:00Z"
+  }
+]

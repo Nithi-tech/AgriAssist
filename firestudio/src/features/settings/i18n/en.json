@@ -1,0 +1,102 @@
+{
+  "settings": {
+    "title": "Settings",
+    "profile": {
+      "title": "Profile",
+      "editProfile": "Edit Profile",
+      "name": "Name",
+      "mobile": "Mobile Number",
+      "village": "Village",
+      "district": "District",
+      "state": "State",
+      "farmArea": "Farm Area (Acres)",
+      "primaryCrop": "Primary Crop",
+      "soilType": "Soil Type",
+      "profilePicture": "Profile Picture",
+      "completion": "Profile Completion",
+      "save": "Save",
+      "cancel": "Cancel"
+    },
+    "language": {
+      "title": "Language",
+      "english": "English",
+      "hindi": "हिंदी",
+      "tamil": "தமிழ்",
+      "telugu": "తెలుగు"
+    },
+    "theme": {
+      "title": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "priceAlerts": "Price Alerts",
+      "weatherWarnings": "Weather Warnings",
+      "schemeUpdates": "Scheme Updates",
+      "cropReminders": "Crop Reminders",
+      "expertAdvice": "Expert Advice",
+      "channels": "Notification Channels",
+      "sms": "SMS",
+      "whatsapp": "WhatsApp",
+      "inapp": "In-App",
+      "familyContacts": "Family Contacts",
+      "addContact": "Add Contact",
+      "removeContact": "Remove"
+    },
+    "reminders": {
+      "title": "Farming Reminders",
+      "irrigation": "Irrigation Reminders",
+      "enabled": "Enabled",
+      "frequency": "Frequency (Days)",
+      "timeOfDay": "Best Time",
+      "morning": "Morning",
+      "evening": "Evening",
+      "suggestFrequency": "Suggest Frequency",
+      "fertilizer": "Fertilizer Schedule",
+      "pesticide": "Pesticide Schedule",
+      "nextDate": "Next Date"
+    },
+    "privacy": {
+      "title": "Privacy & Data",
+      "shareProduction": "Share Production Data",
+      "expertContact": "Allow Expert Contact",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "data": {
+      "title": "Data & Backup",
+      "exportData": "Export Data",
+      "importData": "Import Data",
+      "lastBackup": "Last Backup",
+      "offlineMode": "Offline Mode",
+      "autoSync": "Auto-sync Govt Schemes",
+      "onlineFeatures": "Online features limited while offline"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "exportBackup": "Export Backup",
+      "importBackup": "Import Backup",
+      "switchLanguage": "Switch Language",
+      "exportPDF": "Export PDF Report",
+      "savedLocally": "Your changes are saved locally"
+    },
+    "aiAssistant": {
+      "title": "AI Assistant",
+      "open": "Open Assistant"
+    },
+    "messages": {
+      "profileUpdated": "Profile updated successfully",
+      "settingsSaved": "Settings saved",
+      "backupExported": "Backup exported successfully",
+      "backupImported": "Backup imported successfully",
+      "languageChanged": "Language changed",
+      "themeChanged": "Theme changed",
+      "offlineModeEnabled": "Offline mode enabled",
+      "offlineModeDisabled": "Offline mode disabled",
+      "error": "An error occurred. Please try again.",
+      "invalidFile": "Invalid backup file",
+      "networkError": "Network error - please try again"
+    }
+  }
+}

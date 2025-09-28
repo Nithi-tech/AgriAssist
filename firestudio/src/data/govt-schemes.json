@@ -1,0 +1,112 @@
+{
+  "schemes": [
+    {
+      "id": 1001,
+      "category": "Disaster",
+      "scheme_name": "Pradhan Mantri Fasal Bima Yojana",
+      "description": "A comprehensive crop insurance scheme to protect farmers from crop losses due to natural calamities",
+      "benefits": [
+        "Insurance coverage and financial support to farmers in case of crop failure",
+        "Stabilizing farmer income to ensure continuity in farming",
+        "Encouraging farmers to adopt innovative practices"
+      ],
+      "eligibility": [
+        "All farmers including sharecroppers and tenant farmers",
+        "Growing notified crops in notified areas",
+        "Required to have insurable interest in the crop"
+      ],
+      "location": "Pan India",
+      "apply_link": "https://pmfby.gov.in"
+    },
+    {
+      "id": 1002,
+      "category": "Location",
+      "scheme_name": "Maharashtra State Drought Assistance Program",
+      "description": "State-specific assistance for drought-affected farmers in Maharashtra",
+      "benefits": [
+        "Direct financial assistance",
+        "Input subsidy for next crop season",
+        "Irrigation support"
+      ],
+      "eligibility": [
+        "Farmers in drought-declared districts of Maharashtra",
+        "Land holding up to 2 hectares",
+        "Crop loss above 33% in declared drought area"
+      ],
+      "location": "Maharashtra",
+      "apply_link": "https://krishi.maharashtra.gov.in"
+    },
+    {
+      "id": 1003,
+      "category": "Eligibility",
+      "scheme_name": "PM-KISAN",
+      "description": "Direct income support to farmer families to supplement their financial needs",
+      "benefits": [
+        "Rs. 6000 per year in three installments",
+        "Direct transfer to bank account",
+        "Additional state-specific top-ups"
+      ],
+      "eligibility": [
+        "Small and marginal farmer families",
+        "Combined landholding up to 2 hectares",
+        "Subject to exclusion criteria"
+      ],
+      "location": "Pan India",
+      "apply_link": "https://pmkisan.gov.in"
+    },
+    {
+      "id": 1004,
+      "category": "Disaster",
+      "scheme_name": "National Disaster Relief Fund",
+      "description": "Emergency assistance for farmers affected by severe natural calamities",
+      "benefits": [
+        "Immediate financial relief",
+        "Compensation for crop damage",
+        "Support for restoration of damaged agricultural infrastructure"
+      ],
+      "eligibility": [
+        "Farmers in officially declared disaster-affected areas",
+        "Verifiable crop loss due to natural calamity",
+        "Land record documentation required"
+      ],
+      "location": "Pan India",
+      "apply_link": "https://ndma.gov.in/response/disaster-relief-fund"
+    },
+    {
+      "id": 1005,
+      "category": "Location",
+      "scheme_name": "Punjab Farm Loan Waiver Scheme",
+      "description": "State-specific scheme for debt relief to marginal farmers",
+      "benefits": [
+        "Waiver of agricultural loans up to specified amount",
+        "Interest relief on existing loans",
+        "Fresh credit availability"
+      ],
+      "eligibility": [
+        "Small and marginal farmers in Punjab",
+        "Outstanding institutional crop loan",
+        "Land holding below 5 acres"
+      ],
+      "location": "Punjab",
+      "apply_link": "https://agriculture.punjab.gov.in"
+    },
+    {
+      "id": 1006,
+      "category": "Eligibility",
+      "scheme_name": "Kisan Credit Card Scheme",
+      "description": "Provides farmers with timely access to credit",
+      "benefits": [
+        "Simplified loan processing",
+        "Flexible withdrawal and repayment",
+        "Insurance coverage for card holders"
+      ],
+      "eligibility": [
+        "All farmers, tenant farmers, and sharecroppers",
+        "Good credit history",
+        "Land ownership or tenancy documents"
+      ],
+      "location": "Pan India",
+      "apply_link": "https://www.nabard.org/kcc"
+    }
+  ]
+}

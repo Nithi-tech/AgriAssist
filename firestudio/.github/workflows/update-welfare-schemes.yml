@@ -1,0 +1,70 @@
+name: Weekly Welfare Schemes Update
+
+on:
+  schedule:
+    # Run every Monday at 00:00 UTC
+    - cron: '0 0 * * 1'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+    
+    env:
+      # These secrets must be configured in repository settings
+      NEXT_PUBLIC_SUPABASE_URL: ${{ vars.NEXT_PUBLIC_SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate environment variables
+        run: |
+          if [ -z "$NEXT_PUBLIC_SUPABASE_URL" ]; then
+            echo "Error: NEXT_PUBLIC_SUPABASE_URL is not set"
+            exit 1
+          fi
+          if [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "Error: SUPABASE_SERVICE_ROLE_KEY is not set"
+            exit 1
+          fi
+          echo "Environment variables are properly configured"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          npx playwright install chromium
+          
+      - name: Run scraper
+        run: node scripts/scrapeWelfareSchemes.js
+        
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: welfare-schemes-data
+          path: |
+            data/welfare_schemes_*.json
+            data/welfare_schemes_*.csv
+            data/scrape_log_*.json
+            
+      - name: Create Pull Request with updates
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: 'chore: Update welfare schemes data'
+          title: '[Automated] Weekly welfare schemes update'
+          body: |
+            Automated update of welfare schemes data from myscheme.gov.in
+            
+            This PR was created automatically by the weekly scraper workflow.
+            Please review the changes and logs before merging.
+          branch: update-welfare-schemes
+          delete-branch: true
+          labels: |
+            automated-pr
+            data-update

@@ -1,0 +1,90 @@
+[
+  {
+    "scheme_name": "PM-KISAN Samman Nidhi",
+    "state": "Central",
+    "description_html": "<p>Under this scheme, income support of ₹6,000 per year is provided to all farmer families across the country in three equal installments of ₹2,000 each every four months.</p>",
+    "description_text": "Under this scheme, income support of ₹6,000 per year is provided to all farmer families across the country in three equal installments of ₹2,000 each every four months.",
+    "eligibility_html": "<p>All landholding farmer families having cultivable land holding in their names either individually or jointly are eligible.</p>",
+    "eligibility_text": "All landholding farmer families having cultivable land holding in their names either individually or jointly are eligible.",
+    "link": "https://pmkisan.gov.in/",
+    "source_url": "https://pmkisan.gov.in/",
+    "scraped_at": "2025-08-13T12:00:00Z"
+  },
+  {
+    "scheme_name": "Krishi Bhagya Scheme",
+    "state": "Karnataka",
+    "description_html": "<p>The scheme aims to increase crop productivity and farmer income by providing micro irrigation facilities and promoting efficient water use.</p>",
+    "description_text": "The scheme aims to increase crop productivity and farmer income by providing micro irrigation facilities and promoting efficient water use.",
+    "eligibility_html": "<p>Small and marginal farmers in Karnataka with landholding up to 5 acres are eligible for the scheme.</p>",
+    "eligibility_text": "Small and marginal farmers in Karnataka with landholding up to 5 acres are eligible for the scheme.",
+    "link": "https://raitamitra.karnataka.gov.in/schemes/krishi-bhagya",
+    "source_url": "https://raitamitra.karnataka.gov.in/schemes/krishi-bhagya",
+    "scraped_at": "2025-08-13T12:05:00Z"
+  },
+  {
+    "scheme_name": "Tamil Nadu Uzhavar Padhukappu Thittam",
+    "state": "Tamil Nadu",
+    "description_html": "<p>This scheme provides crop insurance coverage to farmers against natural calamities, pest attacks, and diseases affecting crop yield.</p>",
+    "description_text": "This scheme provides crop insurance coverage to farmers against natural calamities, pest attacks, and diseases affecting crop yield.",
+    "eligibility_html": "<p>All farmers in Tamil Nadu who cultivate notified crops during notified seasons are eligible.</p>",
+    "eligibility_text": "All farmers in Tamil Nadu who cultivate notified crops during notified seasons are eligible.",
+    "link": "https://tn.gov.in/schemes/agriculture/uzhavar-padhukappu",
+    "source_url": "https://tn.gov.in/schemes/agriculture/uzhavar-padhukappu",
+    "scraped_at": "2025-08-13T12:10:00Z"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Fasal Bima Yojana",
+    "state": "Central",
+    "description_html": "<p>PMFBY is a crop insurance scheme that provides financial support and insurance coverage for farmers in case of crop loss due to natural calamities, pests & diseases.</p>",
+    "description_text": "PMFBY is a crop insurance scheme that provides financial support and insurance coverage for farmers in case of crop loss due to natural calamities, pests & diseases.",
+    "eligibility_html": "<p>All farmers growing notified crops in notified areas during the season who have insurable interest on the crop are eligible.</p>",
+    "eligibility_text": "All farmers growing notified crops in notified areas during the season who have insurable interest on the crop are eligible.",
+    "link": "https://pmfby.gov.in/",
+    "source_url": "https://pmfby.gov.in/",
+    "scraped_at": "2025-08-13T12:15:00Z"
+  },
+  {
+    "scheme_name": "Raita Bandhu Scheme",
+    "state": "Karnataka",
+    "description_html": "<p>Financial assistance of ₹4,000 per acre per season (maximum 2 seasons) is provided to farmers for crop cultivation expenses.</p>",
+    "description_text": "Financial assistance of ₹4,000 per acre per season (maximum 2 seasons) is provided to farmers for crop cultivation expenses.",
+    "eligibility_html": "<p>All farmers in Karnataka who own agricultural land and cultivate crops are eligible for financial assistance.</p>",
+    "eligibility_text": "All farmers in Karnataka who own agricultural land and cultivate crops are eligible for financial assistance.",
+    "link": "https://raitamitra.karnataka.gov.in/schemes/raita-bandhu",
+    "source_url": "https://raitamitra.karnataka.gov.in/schemes/raita-bandhu",
+    "scraped_at": "2025-08-13T12:20:00Z"
+  },
+  {
+    "scheme_name": "Chief Minister's Comprehensive Crop Insurance Scheme",
+    "state": "Tamil Nadu",
+    "description_html": "<p>Comprehensive crop insurance scheme covering all major crops against weather-related losses with premium subsidy from the state government.</p>",
+    "description_text": "Comprehensive crop insurance scheme covering all major crops against weather-related losses with premium subsidy from the state government.",
+    "eligibility_html": "<p>Farmers cultivating in Tamil Nadu during kharif, rabi and summer seasons are eligible for coverage.</p>",
+    "eligibility_text": "Farmers cultivating in Tamil Nadu during kharif, rabi and summer seasons are eligible for coverage.",
+    "link": "https://tn.gov.in/schemes/agriculture/cm-crop-insurance",
+    "source_url": "https://tn.gov.in/schemes/agriculture/cm-crop-insurance",
+    "scraped_at": "2025-08-13T12:25:00Z"
+  },
+  {
+    "scheme_name": "Soil Health Card Scheme",
+    "state": "Central",
+    "description_html": "<p>The scheme aims to promote soil test based nutrient management for improving productivity through soil health cards providing information on nutrient status of soil.</p>",
+    "description_text": "The scheme aims to promote soil test based nutrient management for improving productivity through soil health cards providing information on nutrient status of soil.",
+    "eligibility_html": "<p>All farmers across India are eligible to get soil health cards for their agricultural land.</p>",
+    "eligibility_text": "All farmers across India are eligible to get soil health cards for their agricultural land.",
+    "link": "https://soilhealth.dac.gov.in/",
+    "source_url": "https://soilhealth.dac.gov.in/",
+    "scraped_at": "2025-08-13T12:30:00Z"
+  },
+  {
+    "scheme_name": "Anna Bhagya Scheme",
+    "state": "Karnataka",
+    "description_html": "<p>Free food grains distribution scheme providing 5kg rice per person per month to BPL families and 35kg rice per month per family.</p>",
+    "description_text": "Free food grains distribution scheme providing 5kg rice per person per month to BPL families and 35kg rice per month per family.",
+    "eligibility_html": "<p>All BPL families holding valid ration cards in Karnataka are eligible for free rice distribution.</p>",
+    "eligibility_text": "All BPL families holding valid ration cards in Karnataka are eligible for free rice distribution.",
+    "link": "https://ahara.kar.nic.in/anna-bhagya",
+    "source_url": "https://ahara.kar.nic.in/anna-bhagya",
+    "scraped_at": "2025-08-13T12:35:00Z"
+  }
+]

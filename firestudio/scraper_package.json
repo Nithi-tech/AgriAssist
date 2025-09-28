@@ -1,0 +1,18 @@
+{
+  "name": "run-comprehensive-scraper",
+  "version": "1.0.0",
+  "description": "Enhanced Government Schemes Scraper - Collects all available schemes",
+  "main": "scripts/comprehensive_scraper.js",
+  "scripts": {
+    "scrape": "node scripts/comprehensive_scraper.js",
+    "scrape:enhanced": "node scripts/enhanced_schemes_scraper.js",
+    "scrape:api": "node scripts/government_api_collector.js",
+    "scrape:master": "node scripts/master_schemes_collector.js",
+    "scrape:all": "npm run scrape"
+  },
+  "dependencies": {
+    "playwright": "^1.45.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.4.0"
+  }
+}

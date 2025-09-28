@@ -1,0 +1,47 @@
+name: Update Welfare Schemes
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Run at midnight every Sunday
+  workflow_dispatch:      # Allow manual trigger
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: |
+          npm ci
+          npx playwright install chromium --with-deps
+      
+      - name: Run scraper
+        run: node scripts/scrape_schemes.js
+      
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: 'chore: update welfare schemes data'
+          title: 'Update welfare schemes data'
+          body: |
+            🤖 Automated welfare schemes data update
+            
+            This PR updates the welfare schemes data scraped from myscheme.gov.in
+            
+            Changes:
+            - Updated welfare_schemes.json
+            - Updated scraping logs
+            
+            Please review the changes before merging.
+          branch: update-welfare-schemes
+          delete-branch: true
+          labels: |
+            automated
+            data-update
