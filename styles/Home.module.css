@@ -1,0 +1,132 @@
+.container {
+  padding: 0 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-align: center;
+  color: #2d5016;
+}
+
+.agriassist {
+  color: #4a7c29;
+  text-decoration: none;
+}
+
+.description {
+  margin: 2rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #666;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  gap: 1rem;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #4a7c29;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+  max-width: 300px;
+  cursor: pointer;
+  background: #f9fcf6;
+}
+
+.card:hover {
+  color: #4a7c29;
+  border-color: #4a7c29;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(74, 124, 41, 0.1);
+}
+
+.card.selected {
+  background: #e8f5e8;
+  border-color: #4a7c29;
+  color: #2d5016;
+  box-shadow: 0 4px 12px rgba(74, 124, 41, 0.2);
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: #2d5016;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.selectedTool {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: #e8f5e8;
+  border-radius: 10px;
+  border: 2px solid #4a7c29;
+  text-align: center;
+  max-width: 600px;
+}
+
+.selectedTool h3 {
+  color: #2d5016;
+  margin: 0 0 1rem 0;
+}
+
+.selectedTool p {
+  color: #666;
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fa;
+}
+
+.footer p {
+  margin: 0;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+}
