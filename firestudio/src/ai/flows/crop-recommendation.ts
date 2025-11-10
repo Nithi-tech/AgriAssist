@@ -1,16 +1,15 @@
-// A Genkit flow to provide crop recommendations based on location, soil type, and weather conditions.
+// Crop recommendation API client - now uses secure Next.js API route
 
 'use server';
 
 /**
- * @fileOverview Crop recommendation AI agent.
+ * @fileOverview Crop recommendation client that calls the secure API route.
  *
  * - recommendCrops - A function that handles the crop recommendation process.
  * - CropRecommendationInput - The input type for the recommendCrops function.
  * - CropRecommendationOutput - The return type for the recommendCrops function.
  */
 
-import {ai} from '@/ai/genkit';
 import {z} from 'zod';
 
 // Define valid soil types
@@ -54,56 +53,73 @@ const CropRecommendationOutputSchema = z.object({
 });
 export type CropRecommendationOutput = z.infer<typeof CropRecommendationOutputSchema>;
 
+/**
+ * Get crop recommendations by calling the secure API route
+ * This ensures the API key is never exposed to the frontend
+ */
 export async function recommendCrops(input: CropRecommendationInput): Promise<CropRecommendationOutput> {
-  return recommendCropsFlow(input);
-}
+  try {
+    // Validate input
+    const validatedInput = CropRecommendationInputSchema.parse(input);
+    
+    // Get the base URL for the API call
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 
+                   (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
+    
+    console.log('Calling crop recommendation API...');
+    
+    // Call the secure API route
+    const response = await fetch(`${baseUrl}/api/crop-recommendation`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(validatedInput),
+    });
 
-const prompt = ai.definePrompt({
-  name: 'cropRecommendationPrompt',
-  input: {schema: CropRecommendationInputSchema},
-  output: {schema: CropRecommendationOutputSchema},
-  model: 'googleai/gemini-1.5-flash',
-  prompt: `You are an expert agricultural advisor. Based on the farmer's location, soil type, and preferred language, recommend the best crops to plant. Consider the typical climate patterns and growing seasons for the location. For each crop, provide detailed information about its suitability and growing requirements.
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({}));
+      console.error('API response error:', {
+        status: response.status,
+        statusText: response.statusText,
+        error: errorData
+      });
+      
+      let errorMessage = 'Failed to get crop recommendations';
+      
+      if (response.status === 500 && errorData.code === 'API_KEY_MISSING') {
+        errorMessage = 'API Configuration Required: Please add your Google AI API key to the .env.local file.';
+      } else if (response.status === 401 || response.status === 403) {
+        errorMessage = 'Invalid API key. Please check your Google AI API key configuration.';
+      } else if (response.status === 429) {
+        errorMessage = 'API rate limit exceeded. Please try again later.';
+      } else if (errorData.error) {
+        errorMessage = errorData.error;
+      }
+      
+      throw new Error(errorMessage);
+    }
 
-Location: {{{location.name}}} (Coordinates: {{{location.lat}}}, {{{location.lon}}})
-Soil Type: {{{soilType}}}
-Language: {{{language}}}
+    const result = await response.json();
+    
+    if (!result.success || !result.data) {
+      console.error('Invalid API response:', result);
+      throw new Error('Invalid response from crop recommendation API');
+    }
 
-IMPORTANT: Provide ALL responses in the requested language ({{{language}}}). If the language is not English, translate all crop names, descriptions, and explanations to that language while keeping the JSON structure intact.
+    // Validate the output
+    const validatedOutput = CropRecommendationOutputSchema.parse(result.data);
+    
+    console.log('Crop recommendation completed successfully');
+    return validatedOutput;
 
-For each recommended crop, provide:
-1. A suitability percentage (0-100%) based on:
-   - How well the crop matches the soil type
-   - Regional climate suitability
-   - Typical success rate in the region
-2. Ideal sowing time based on the location's seasonal patterns
-3. Expected yield per acre/hectare based on typical farming practices
-4. Current market demand (high/medium/low)
-5. Basic irrigation requirements
-6. Average growth period in days
-
-Respond in a format that can be parsed as a JSON object with:
-- recommendedCrops: an array of objects containing:
-  - name: crop name (in the requested language)
-  - suitabilityPercentage: number (0-100)
-  - sowingTime: string (e.g., "October-November" in the requested language)
-  - expectedYield: string (e.g., "3-4 tons/acre" in the requested language)
-  - marketDemand: "high", "medium", or "low" (in the requested language)
-  - irrigationNeeds: string (e.g., "moderate, 500-600mm per season" in the requested language)
-  - growthPeriod: number (days)
-- reasoning: string explaining the overall recommendation (in the requested language)
-
-Ensure all numeric values are realistic and based on agricultural data. All text content should be in the language specified by the user.`,
-});
-
-const recommendCropsFlow = ai.defineFlow(
-  {
-    name: 'recommendCropsFlow',
-    inputSchema: CropRecommendationInputSchema,
-    outputSchema: CropRecommendationOutputSchema,
-  },
-  async (input: CropRecommendationInput) => {
-    const {output} = await prompt(input);
-    return output!;
+  } catch (error) {
+    console.error('Error in recommendCrops:', error);
+    
+    if (error instanceof z.ZodError) {
+      throw new Error(`Invalid input: ${error.errors.map(e => e.message).join(', ')}`);
+    }
+    
+    throw error;
   }
-);
+}

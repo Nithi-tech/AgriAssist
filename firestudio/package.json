@@ -7,6 +7,7 @@
     "genkit:dev": "genkit start -- tsx src/ai/dev.ts",
     "genkit:watch": "genkit start -- tsx --watch src/ai/dev.ts",
     "build": "next build",
+    "export": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
@@ -16,7 +17,15 @@
     "db:setup": "bash setup_database.sh",
     "db:test": "node test_database.js",
     "import:policies": "tsx scripts/importPolicies.ts",
-    "test:sensor": "node test-firebase-sensor.js"
+    "test:sensor": "node test-firebase-sensor.js",
+    "mobile:init": "npx cap init",
+    "mobile:add:android": "npx cap add android",
+    "mobile:add:ios": "npx cap add ios",
+    "mobile:sync": "npx cap sync",
+    "mobile:build": "npm run build && npx cap sync",
+    "mobile:android": "npx cap open android",
+    "mobile:ios": "npx cap open ios",
+    "pwa:build": "next build && npx workbox generateSW"
   },
   "dependencies": {
     "@genkit-ai/googleai": "^1.14.1",
@@ -86,7 +95,10 @@
     "tsx": "^4.20.4",
     "twilio": "^5.8.0",
     "wav": "^1.0.2",
-    "zod": "^3.24.2"
+    "zod": "^3.24.2",
+    "workbox-cli": "^7.1.0",
+    "workbox-webpack-plugin": "^7.1.0",
+    "react-device-detect": "^2.2.3"
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.35",

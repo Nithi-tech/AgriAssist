@@ -1,6 +1,8 @@
 // utils/translateResponse.ts
-import { type Language } from '@/providers/language-provider';
-// Note: i18n import removed to avoid build conflicts with Genkit
+// Translation utility that uses the secure Gemini API route
+
+// Define language type locally to avoid import issues
+type Language = 'en' | 'hi' | 'ta' | 'te' | 'bn' | 'mr' | 'gu' | 'as';
 
 export interface TranslationCache {
   [key: string]: string;
@@ -10,7 +12,7 @@ export interface TranslationCache {
 const translationCache: TranslationCache = {};
 
 // Support exactly 7 languages as defined in i18n.js
-const SUPPORTED_LANGUAGES: readonly Language[] = ['ta', 'en', 'hi', 'te', 'bn', 'as', 'gu'] as const;
+const SUPPORTED_LANGUAGES: readonly Language[] = ['ta', 'en', 'hi', 'te', 'bn', 'as', 'gu', 'mr'] as const;
 const DEFAULT_LANGUAGE: Language = 'en';
 
 // Language mapping for better Gemini API understanding (restricted to 7 languages)
@@ -21,7 +23,8 @@ const languageMap: Record<Language, string> = {
   'te': 'Telugu',
   'bn': 'Bengali',
   'as': 'Assamese',
-  'gu': 'Gujarati'
+  'gu': 'Gujarati',
+  'mr': 'Marathi'
 };
 
 // Type-safe language validation
@@ -73,47 +76,43 @@ export async function translateResponse(text: string, targetLang: string): Promi
       return text;
     }
 
-    const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          contents: [
-            {
-              role: 'user',
-              parts: [
-                {
-                  text: `Translate the following text into ${targetLanguage}. Only provide the translation, no additional text or explanation:\n\n${text}`
-                }
-              ]
-            }
-          ],
-          generationConfig: {
-            temperature: 0.1,
-            maxOutputTokens: 1024,
-          }
-        })
-      }
-    );
+    // Use the secure API route instead of direct Gemini call
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 
+                   (typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000');
+    
+    const response = await fetch(`${baseUrl}/api/gemini`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        type: 'translation',
+        text: text,
+        targetLanguage: targetLanguage,
+        sourceLanguage: 'auto'
+      })
+    });
 
     if (!response.ok) {
+      const errorData = await response.json().catch(() => ({}));
+      console.error('Translation API failed:', errorData);
       throw new Error(`Translation API failed: ${response.status} ${response.statusText}`);
     }
 
     const data = await response.json();
-    const translatedText = data.candidates?.[0]?.content?.parts?.[0]?.text?.trim();
-
-    if (translatedText) {
-      // Cache the translation
-      translationCache[cacheKey] = translatedText;
-      return translatedText;
-    } else {
-      console.warn('No translation received from API');
-      return text;
+    
+    if (data.success && data.data) {
+      const translatedText = data.data.response?.trim();
+      
+      if (translatedText) {
+        // Cache the translation
+        translationCache[cacheKey] = translatedText;
+        return translatedText;
+      }
     }
+    
+    console.warn('No translation received from API');
+    return text;
 
   } catch (error) {
     console.error('Translation error:', error);

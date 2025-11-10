@@ -1,5 +1,8 @@
 'use client';
 
+// Force dynamic rendering to ensure secure API calls
+export const dynamic = 'force-dynamic';
+
 import { DiseaseDiagnosisForm } from '@/components/disease-diagnosis-form';
 import { PageHeader } from '@/components/page-header';
 import { useLanguage } from '@/hooks/use-language';

@@ -1,6 +1,6 @@
 const nextConfig = {
   /* config options here */
-  // output: 'standalone', // Enable for Docker deployment
+  // output: 'export', // Disabled for now due to API routes
   trailingSlash: true,
   typescript: {
     ignoreBuildErrors: true, // Ignore TypeScript errors for deployment
@@ -9,7 +9,7 @@ const nextConfig = {
     ignoreDuringBuilds: true, // Ignore ESLint errors for deployment
   },
   images: {
-    unoptimized: false, // Enable optimization in production
+    unoptimized: true, // Required for static export
     remotePatterns: [
       {
         protocol: 'https',
@@ -28,20 +28,11 @@ const nextConfig = {
   // Production optimizations
   experimental: {
     optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
-    turbo: {
-      rules: {
-        '*.svg': {
-          loaders: ['@svgr/webpack'],
-          as: '*.js',
-        },
-      },
-    },
   },
   // Compression and performance
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
-  swcMinify: true,
   
   // Environment variables
   env: {

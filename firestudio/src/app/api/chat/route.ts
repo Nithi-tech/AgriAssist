@@ -66,10 +66,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({error: 'Message is required'}, {status: 400});
     }
 
-    const geminiApiKey = process.env.GEMINI_API_KEY;
-    if (!geminiApiKey) {
-      return NextResponse.json({error: 'Gemini API key is not configured'}, {status: 500});
-    }
+
 
     // Detect language if not provided
     const detectedLanguage = detectLanguage(message);
@@ -100,43 +97,33 @@ export async function POST(req: NextRequest) {
       }
     ];
 
-    const geminiApiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${geminiApiKey}`;
+    // Forward to unified Gemini API instead of making direct API call
+    const geminiRequest = {
+      type: 'general-chat',
+      message: message,
+      language: responseLanguage,
+      history: history
+    };
 
-    const response = await fetch(geminiApiUrl, {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 
+                   (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
+    
+    const geminiResponse = await fetch(`${baseUrl}/api/gemini`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        contents,
-        generationConfig: {
-          temperature: 0.7,
-          topK: 40,
-          topP: 0.95,
-          maxOutputTokens: 1024,
-        },
-        safetySettings: [
-          {
-            category: 'HARM_CATEGORY_HARASSMENT',
-            threshold: 'BLOCK_MEDIUM_AND_ABOVE'
-          },
-          {
-            category: 'HARM_CATEGORY_HATE_SPEECH',
-            threshold: 'BLOCK_MEDIUM_AND_ABOVE'
-          }
-        ]
-      }),
+      body: JSON.stringify(geminiRequest),
     });
 
-    const data = await response.json();
-
-    if (!response.ok) {
-      console.error('Gemini API error:', data);
-      const errorMessage = data.error?.message || JSON.stringify(data);
-      return NextResponse.json({error: `Failed to get response from AI: ${errorMessage}`}, {status: response.status});
+    if (!geminiResponse.ok) {
+      const errorData = await geminiResponse.json();
+      console.error('Gemini API error:', errorData);
+      return NextResponse.json(errorData, { status: geminiResponse.status });
     }
 
-    const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || 'Sorry, I could not get a response.';
+    const result = await geminiResponse.json();
+    const reply = result.data?.response || 'Sorry, I could not get a response.';
 
     return NextResponse.json({
       response: reply,

@@ -1,5 +1,8 @@
 "use client";
 
+// Force dynamic rendering to ensure secure API calls
+export const dynamic = 'force-dynamic';
+
 // ============================================================================
 // ENHANCED MULTI-LANGUAGE CHAT PAGE
 // Advanced voice chat with multi-language support and real-time translation
